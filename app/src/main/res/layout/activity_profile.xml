@@ -97,8 +97,5 @@
                     android:text="@string/profile_imperial" />
             </RadioGroup>
         </LinearLayout>
-
-        <!-- Bottom nav -->
-        <include layout="@layout/partial_bottom_nav" />
     </LinearLayout>
 </ScrollView>

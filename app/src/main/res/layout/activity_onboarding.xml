@@ -1,138 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/onboardRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorSecondary"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="32dp">
 
-    <TextView
-        android:id="@+id/onboardTitle"
-        android:layout_width="wrap_content"
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/onboard_title_1"
-        android:textColor="@color/textPrimary"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp">
 
-    <TextView
-        android:id="@+id/onboardSubtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/onboard_sub_1"
-        android:textColor="@color/textSecondary"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/onboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onboard_title_1"
+            android:textColor="@color/textPrimary"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4dp" />
 
+        <TextView
+            android:id="@+id/onboardSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/onboard_sub_1"
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+
+    <!-- Content ViewFlipper -->
     <ViewFlipper
         android:id="@+id/onboardFlipper"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginBottom="32dp">
 
-        <FrameLayout
+        <!-- Page 1 -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_card"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Overview"
-                android:textColor="@color/textSecondary"
-                android:textSize="18sp" />
-        </FrameLayout>
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/divider"
+            app:cardBackgroundColor="@color/white">
 
-        <FrameLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📱"
+                    android:textSize="72sp"
+                    android:layout_marginBottom="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to HydraFit"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track water, steps, and workouts in one beautiful app"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Page 2 -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_card"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Hydration"
-                android:textColor="@color/textSecondary"
-                android:textSize="18sp" />
-        </FrameLayout>
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/divider"
+            app:cardBackgroundColor="@color/white">
 
-        <FrameLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💧"
+                    android:textSize="72sp"
+                    android:layout_marginBottom="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stay Hydrated"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick log buttons keep you on track all day long"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Page 3 -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_card"
-            android:padding="16dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Goals"
-                android:textColor="@color/textSecondary"
-                android:textSize="18sp" />
-        </FrameLayout>
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/divider"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎯"
+                    android:textSize="72sp"
+                    android:layout_marginBottom="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crush Your Goals"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simple stats to visualize your weekly progress"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </ViewFlipper>
 
-    <!-- Dots -->
+    <!-- Modern Dots Indicator -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="32dp"
         android:orientation="horizontal">
 
-        <TextView
+        <View
             android:id="@+id/dot1"
             android:layout_width="8dp"
             android:layout_height="8dp"
             android:background="@drawable/dot_active" />
 
-        <TextView
+        <View
             android:id="@+id/dot2"
             android:layout_width="8dp"
             android:layout_height="8dp"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="12dp"
             android:background="@drawable/dot_inactive" />
 
-        <TextView
+        <View
             android:id="@+id/dot3"
             android:layout_width="8dp"
             android:layout_height="8dp"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="12dp"
             android:background="@drawable/dot_inactive" />
     </LinearLayout>
 
-    <!-- Buttons -->
+    <!-- Modern Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
         android:orientation="horizontal">
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSkip"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="56dp"
             android:layout_weight="1"
-            android:gravity="center"
+            android:layout_marginEnd="8dp"
             android:text="@string/onboard_skip"
-            android:textColor="@color/colorPrimary"
-            android:textStyle="bold"
-            android:background="@drawable/bg_chip" />
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
             android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="12dp"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_height="56dp"
+            android:layout_weight="2"
+            android:layout_marginStart="8dp"
             android:text="@string/onboard_next"
             android:textColor="@color/colorOnAccent"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:background="@drawable/bg_primary_button" />
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="16dp"
+            app:elevation="0dp" />
     </LinearLayout>
 </LinearLayout>

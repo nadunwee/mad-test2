@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- 60-30-10 color rule -->
-    <!-- Primary (60%) -->
-    <color name="colorPrimary">#3949AB</color> <!-- Indigo 600 -->
-    <color name="colorPrimaryDark">#283593</color>
+    <!-- Modern Material Design 3 Inspired Color Palette -->
+    
+    <!-- Primary Colors (Main brand color) -->
+    <color name="colorPrimary">#6366F1</color> <!-- Modern Indigo -->
+    <color name="colorPrimaryDark">#4F46E5</color> <!-- Darker Indigo -->
     <color name="colorOnPrimary">#FFFFFF</color>
 
-    <!-- Secondary (30%) -->
-    <color name="colorSecondary">#F5F7FA</color> <!-- Soft light surface -->
+    <!-- Secondary Colors (Background) -->
+    <color name="colorSecondary">#F8FAFC</color> <!-- Very light gray-blue -->
     <color name="colorOnSecondary">#0F172A</color>
 
-    <!-- Accent (10%) -->
-    <color name="colorAccent">#00C853</color> <!-- Green A700 -->
+    <!-- Accent Colors (Call-to-action) -->
+    <color name="colorAccent">#10B981</color> <!-- Modern Green -->
     <color name="colorOnAccent">#FFFFFF</color>
 
-    <!-- Neutrals -->
-    <color name="textPrimary">#111827</color>
-    <color name="textSecondary">#4B5563</color>
-    <color name="divider">#E5E7EB</color>
+    <!-- Surface Colors -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surfaceVariant">#F1F5F9</color>
+    <color name="onSurface">#1E293B</color>
+    <color name="onSurfaceVariant">#64748B</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#1E293B</color> <!-- Dark slate -->
+    <color name="textSecondary">#64748B</color> <!-- Medium gray -->
+    <color name="textTertiary">#94A3B8</color> <!-- Light gray -->
+
+    <!-- Utility Colors -->
+    <color name="divider">#E2E8F0</color> <!-- Very light border -->
     <color name="white">#FFFFFF</color>
-    <color name="dotInactive">#D1D5DB</color>
+    <color name="background">#FEFEFE</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#10B981</color> <!-- Green -->
+    <color name="warning">#F59E0B</color> <!-- Amber -->
+    <color name="error">#EF4444</color> <!-- Red -->
+    <color name="info">#3B82F6</color> <!-- Blue -->
+
+    <!-- Navigation and Interaction -->
+    <color name="ripple">#6366F120</color> <!-- Primary with alpha -->
+    
+    <!-- Legacy colors for compatibility -->
+    <color name="dotInactive">#CBD5E1</color>
 </resources>

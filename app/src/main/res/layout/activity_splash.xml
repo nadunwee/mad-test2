@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/splashRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/splash_gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
 
-    <LinearLayout
+    <!-- Modern Logo Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/splashLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💧"
+                android:textSize="48sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/splashTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/splashLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="💧"
-            android:textColor="@color/colorOnPrimary"
-            android:textSize="48sp" />
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay hydrated. Stay fit."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:alpha="0.8"
+        android:fontFamily="sans-serif-medium" />
 
-        <TextView
-            android:id="@+id/splashTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/app_name"
-            android:textColor="@color/colorOnPrimary"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-</FrameLayout>
+</LinearLayout>

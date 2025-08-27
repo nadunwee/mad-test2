@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.hive_mad"
-    compileSdk = 36
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.hive_mad"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
