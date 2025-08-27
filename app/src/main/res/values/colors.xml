@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 60-30-10 color rule -->
+    <!-- Primary (60%) -->
+    <color name="colorPrimary">#3949AB</color> <!-- Indigo 600 -->
+    <color name="colorPrimaryDark">#283593</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary (30%) -->
+    <color name="colorSecondary">#F5F7FA</color> <!-- Soft light surface -->
+    <color name="colorOnSecondary">#0F172A</color>
+
+    <!-- Accent (10%) -->
+    <color name="colorAccent">#00C853</color> <!-- Green A700 -->
+    <color name="colorOnAccent">#FFFFFF</color>
+
+    <!-- Neutrals -->
+    <color name="textPrimary">#111827</color>
+    <color name="textSecondary">#4B5563</color>
+    <color name="divider">#E5E7EB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dotInactive">#D1D5DB</color>
+</resources>

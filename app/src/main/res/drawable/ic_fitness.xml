@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <!-- Material "fitness_center" -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M20.57,14.86l-1.41,1.41 -2.12,-2.12 -2.12,2.12 -1.41,-1.41 2.12,-2.12 -2.12,-2.12 1.41,-1.41 2.12,2.12 2.12,-2.12 1.41,1.41 -2.12,2.12 2.12,2.12zM7.05,3.51L8.46,4.92 6.34,7.05l2.12,2.12 -1.41,1.41L4.93,8.46 2.81,10.59 1.39,9.17l2.12,-2.12L1.39,4.93 2.81,3.51l2.12,2.12z"/>
+</vector>

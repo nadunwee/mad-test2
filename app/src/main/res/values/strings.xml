@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HydraFit</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_workout">Workout</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_hydration">Hydration</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Main -->
+    <string name="greeting_title">Hello, Nadun 👋</string>
+    <string name="greeting_subtitle">Stay hydrated and crush your goals today.</string>
+    <string name="chip_log_water">Log Water</string>
+    <string name="chip_start_workout">Start Workout</string>
+    <string name="chip_add_meal">Add Meal</string>
+    <string name="card_steps_title">Steps</string>
+    <string name="card_water_title">Water</string>
+    <string name="steps_value">5,432</string>
+    <string name="water_value">1.5 L / 3.0 L</string>
+    <string name="btn_start_workout">Start Workout</string>
+    <string name="btn_view_stats">View Stats</string>
+
+    <!-- Workout -->
+    <string name="workout_title">New Workout</string>
+    <string name="workout_hint_name">Workout name (e.g., Push Day)</string>
+    <string name="workout_hint_duration">Duration (minutes)</string>
+    <string name="workout_btn_begin">Begin</string>
+
+    <!-- Stats -->
+    <string name="stats_title">Weekly Stats</string>
+    <string name="stats_hint_range">Date range (e.g., Mon–Sun)</string>
+    <string name="stats_btn_apply">Apply</string>
+    <string name="placeholder_chart">Chart Placeholder</string>
+
+    <!-- Hydration -->
+    <string name="hydration_title">Hydration</string>
+    <string name="hydration_today">Today</string>
+    <string name="hydration_goal">Goal: 3.0 L</string>
+    <string name="hydration_add_250">+250 ml</string>
+    <string name="hydration_add_500">+500 ml</string>
+    <string name="hydration_reset">Reset</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Your Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_units">Units</string>
+    <string name="profile_metric">Metric (kg, L)</string>
+    <string name="profile_imperial">Imperial (lb, oz)</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_skip">Skip</string>
+    <string name="onboard_next">Next</string>
+    <string name="onboard_get_started">Get Started</string>
+    <string name="onboard_title_1">Welcome to HydraFit</string>
+    <string name="onboard_sub_1">Track water, steps, and workouts in one clean app.</string>
+    <string name="onboard_title_2">Stay Hydrated</string>
+    <string name="onboard_sub_2">Quick log buttons keep you on track all day.</string>
+    <string name="onboard_title_3">Crush Your Goals</string>
+    <string name="onboard_sub_3">Simple stats to visualize your weekly progress.</string>
+</resources>
