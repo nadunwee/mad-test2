@@ -57,6 +57,4 @@
         android:textColor="@color/colorOnAccent"
         android:textStyle="bold" />
 
-    <!-- Bottom nav -->
-    <include layout="@layout/partial_bottom_nav" />
 </LinearLayout>

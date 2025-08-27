@@ -93,6 +93,4 @@
         android:textColor="@color/colorPrimary"
         android:textStyle="bold" />
 
-    <!-- Bottom nav -->
-    <include layout="@layout/partial_bottom_nav" />
 </LinearLayout>
