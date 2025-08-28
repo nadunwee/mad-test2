@@ -92,8 +92,7 @@
                     android:progress="50"
                     app:indicatorColor="@color/colorAccent"
                     app:trackColor="@color/divider"
-                    app:trackThickness="8dp"
-                    app:indicatorTrackGapSize="0dp" />
+                    app:trackThickness="8dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
