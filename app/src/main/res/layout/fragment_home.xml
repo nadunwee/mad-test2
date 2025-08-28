@@ -238,7 +238,6 @@
                 android:textColor="@color/colorOnAccent"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:onClick="goToWorkout"
                 app:backgroundTint="@color/colorAccent"
                 app:cornerRadius="16dp"
                 app:elevation="0dp" />
@@ -252,7 +251,6 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:onClick="goToStats"
                 app:strokeColor="@color/colorPrimary"
                 app:strokeWidth="2dp"
                 app:cornerRadius="16dp" />
